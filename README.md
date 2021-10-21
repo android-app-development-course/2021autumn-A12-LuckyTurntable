@@ -1,4 +1,4 @@
-# 2021autumn-A12-wu
+# 2021autumn-A12-Lucky Turntable
 
 
 # Lucky Turntable(别名：乐吉转盘)
