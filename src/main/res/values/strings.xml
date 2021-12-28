@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">last_homework</string>
+    <declare-styleable name="Turntable">
+        <attr name="turntable_pointer" format="reference"/>
+        <attr name="turntable_pointer_angle" format="float"/>
+        <attr name="turntable_text_size" format="dimension"/>
+    </declare-styleable>
+</resources>
