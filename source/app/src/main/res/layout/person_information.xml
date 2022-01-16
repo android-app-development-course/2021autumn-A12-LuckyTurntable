@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".peron_information">
+
+
+    <ImageView
+        android:id="@+id/return_to_account"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/return_"/>
+    <View
+        android:id="@+id/fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/return_to_account"
+        android:background="@color/back"/>
+
+    <LinearLayout
+        android:id="@+id/parent_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fengexian"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:text= "头像" />
+
+        <ImageView
+            android:id="@+id/person_image"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:layout_marginStart="150dp"
+            android:src="@drawable/rabbit"
+            android:layout_marginRight="30dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fengexian2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/parent_image"
+        android:background="@color/back"/>
+
+    <LinearLayout
+        android:id="@+id/parent_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fengexian2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:text= "昵称" />
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:layout_gravity="right"
+            android:layout_marginStart="300dp"
+            android:text="幼儿园小儿霸"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fengexian3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/parent_name"
+        android:background="@color/back"/>
+
+    <LinearLayout
+        android:id="@+id/parent_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fengexian3"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:text= "帐号" />
+
+        <TextView
+            android:id="@+id/person_account"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2.4"
+            android:layout_gravity="right"
+            android:text="a7ezxc45zc"
+            android:layout_marginStart="300dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

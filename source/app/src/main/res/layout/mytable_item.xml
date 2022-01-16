@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="2dp"
+    android:background="@drawable/mytable_bg">
+
+    <TextView
+        android:id="@+id/mytable_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/mytable_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="创建时间："
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mytable_creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytable_create"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="创建者："
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mytable_status"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/mytable_creator"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/mytable_delete"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mytable_status"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="删除"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/mytable_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ellipsize="end"
+        android:maxWidth="400dp"
+        android:maxHeight="200dp"
+        android:text="简介："
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+</RelativeLayout>
